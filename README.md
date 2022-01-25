@@ -1,1 +1,1 @@
-# Learn to hook and mofidy WinAPI with Frida
+# Learn to hook and modify WinAPI with Frida
