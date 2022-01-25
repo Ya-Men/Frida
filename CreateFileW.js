@@ -49,8 +49,11 @@ Interceptor.attach(CreateFileW, {
       console.log(`found addr in ${addr} with size of ${size}`);
       console.log("Changing the destination file");
 
-      // Changing lpFileName to point to a different file 
+      // Changing lpFileName to a different file 
       lpFileName.writeByteArray(fileTamperHex);
+
+      /* Or use this easier way */
+      // lpFileName.writeUtf16String("C:\\Users\\YairMentesh\\Desktop\\s.txt");
     }
 
     /*
