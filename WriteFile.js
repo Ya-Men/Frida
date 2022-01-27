@@ -35,7 +35,7 @@ Interceptor.attach(writeFile, {
     */
     var newTextArr = [0x41, 0x42, 0x43, 0x44, 0x45]; // byteArray text
     var textArrSize = Memory.alloc(newTextArr.length); // Dynamiclly allocate memory at the HEAP
-    textArrSize.writeByteArray(newTextArr); // Write byteArray to teh allocated memory
+    textArrSize.writeByteArray(newTextArr); // Write byteArray to the allocated memory
     args[1] = textArrSize; // Point lpBuffer to our newly created "string" in memory
     
     /* Or just use the line below */
